@@ -2,18 +2,18 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <script>
 
-    let nota = parseFloat(prompt('Informe sua Nota: '));
+    let nota = parseFloat(prompt('Informe sua Nota: '));// ao trasformar pra float ele já retorna um erro caso não seja um numero, e o usuario digite "vazio"
 
-    if (nota < 0 || nota > 10) {
-        alert('Nota Invalida, Repita o procedimento!');
+    if (isNaN(nota) || nota < 0 || nota > 10) { // isNaN verifica se é um numero // em js || assim como java, representa o "ou"/"or"
+        alert('Nota Invalida, Repita o procedimento!');// verifica se nota é menor que 0 ou maior que 10
     } else if (nota < 3) {
-        alert('Reprovado');
+        alert('Reprovado');// verifica se é menor que 3 e da o status de reprovado
 
     } else if (nota < 7) {
-        alert('Recuperação');
+        alert('Recuperação');// verifica se é menor que 7 e da o status de Recuperação
 
     } else {
-        alert('Aprovado');
+        alert('Aprovado');// verifica se é maior que 7 e da o status de Aprovado
     }
 
 
