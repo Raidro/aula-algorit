@@ -1,0 +1,72 @@
+<html>
+
+<meta charset="UTF-8">
+
+
+<script>
+
+    //a estrutura do for, utiliza os parenteses e abre e fecha a chaves;
+    //existe o i++,
+    //o primeiro argumento é o ponto de partida,
+    //o segundo é a condição,
+    //e o terceiro é a interação.
+
+    // let estrada = parseFloat(prompt('Entre com um valor numerico de 1 a 10: '));
+
+
+    // for (let i = 0; i < 5; i++) {
+
+    //     alert('Repetição ' + i);
+
+    // }
+
+    /*Outra forma de fazer a questão ---------------------*/
+
+
+    // for (let i = 0; i < 4; i++) {
+
+    //     let notas = parseFloat(prompt('Digite Nota ' + i));
+
+    //     switch (i) {
+    //         case 0:
+    //             n1 = notas;
+    //             break;
+    //         case 1:
+    //             n2 = notas;
+    //             break;
+    //         case 2:
+    //             n3 = notas;
+    //             break;
+    //         case 3:
+    //             n4 = notas;
+
+    //     }
+
+    // }
+
+    // let media = (n1 + n2 + n3 + n4) / 4;
+
+    // alert('A Media é: ' + media);
+
+
+    /* ---------------------------------------------------*/
+
+
+
+    /*Outra forma de fazer a questão ---------------------*/
+
+    let soma = 0; // inicia a soma sendo 0
+
+    for (var i = 0; i < 4; i++) { // no for, incrementamos o i 4 vezes
+
+        let nota = parseFloat(prompt('Nota ' + i)); // colocamos o valor que é digitado dentro de nota
+        soma += nota;   //soma recebe soma + nota
+    }
+    let media = soma / i; // media pega a variavel soma e divide por i, que no caso estara com o valor final do incremento(4)
+    alert('A media é: ' + media); // da o alerta de media
+    /* ---------------------------------------------------*/
+
+
+</script>
+
+</html>
