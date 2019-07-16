@@ -1,0 +1,24 @@
+<html>
+
+<meta charset="UTF-8">
+
+<script>
+    let resposta = 'nao';
+    let count = 0;
+    do {
+
+        resposta = prompt('Eu sou bonito? ').toLowerCase().trim();
+        count++;
+
+    } while (resposta != 'sim' && resposta != 's');
+
+    // usa o operador && pq tem que ser diferente de sim e de s ;
+    // ele tem sempre q ser verdadeiro, no caso, a resposta do while vai ter que ser falso pra parar
+
+    alert('Parabens! Vc é bonito' + 'vc levou: ' + count + ' vezes para dizer sim')
+
+
+
+</script>
+
+</html>
