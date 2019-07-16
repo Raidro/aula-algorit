@@ -13,7 +13,11 @@ alunos[1][0] = 'Zé';
 alunos[1][1] = 5;
 
 for (let i = 0; i < alunos.length; i++) {
+    for (let j = 0; j < alunos[i].length; j++) {
 
-    alert(alunos[i]);
+        alert(alunos[i][j]);
+
+    }
+
 
 }
