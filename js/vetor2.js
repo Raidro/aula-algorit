@@ -29,18 +29,16 @@ for (let i = 0; i < alunos.length; i++) {
 }
 
 
+/*
 
+ mostrando os alunos e as notas uma a um
 
+ for (let i = 0; i < alunos.length; i++) {
 
+     for (let j = 0; j < alunos[i].length; j++) {
 
+         alert(alunos[i][j]);
 
-// for (let i = 0; i < alunos.length; i++) {
+     }
 
-//     for (let j = 0; j < alunos[i].length; j++) {
-
-//         alert(alunos[i][j]);
-
-//     }
-
-
-// }
+ }*/
