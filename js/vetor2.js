@@ -28,7 +28,6 @@ for (let i = 0; i < alunos.length; i++) {
 
 }
 
-
 /*
 
  mostrando os alunos e as notas uma a um
