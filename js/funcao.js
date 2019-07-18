@@ -51,7 +51,7 @@ function somaVetor(vetor) {
     for (let i = 0; i < vetor.length; i++) {
 
         if (ehNumero(vetor[i])) {
-            soma += parseFloat(vetor[i]);
+            soma += vetor[i];
         }
 
     }
