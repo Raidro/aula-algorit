@@ -40,7 +40,9 @@ function soNumero1(texto) {
 
 }
 
-
+function ehNumero(numero) {
+    return !isNaN(numero);
+}
 
 function somaVetor(vetor) {
 
@@ -48,14 +50,16 @@ function somaVetor(vetor) {
 
     for (let i = 0; i < vetor.length; i++) {
 
-        soma += parseFloat(vetor[i]);
+        if (ehNumero(vetor[i])) {
+            soma += parseFloat(vetor[i]);
+        }
 
     }
     return soma;
 
 }
 
-let v = [1, 2, 3, 4, 5, 10];
+let v = ['mateus', 5, 10, 'mahs', 'jhdhjhdj'];
 let soma = somaVetor(v);
 alert(soma);
 
