@@ -44,7 +44,7 @@ function ehNumero(numero) {
     return !isNaN(numero);
 }
 
-function somaVetor(vetor) {
+function somaVetor(vetor) { // codigo de um somatorio de numeros dentro de um vetor
 
     let soma = 0;
 
@@ -59,12 +59,42 @@ function somaVetor(vetor) {
 
 }
 
-let v = ['mateus', 5, 10, 'mahs', 'jhdhjhdj'];
-let soma = somaVetor(v);
-alert(soma);
+function fatorial(numero) { //codigo fatorial não recursivo
+    let resultado = 1;
+    if (ehNumero(numero)) {
+        for (let i = numero; i > 0; i--) {
+
+            resultado *= i;
+        }
+        return resultado;
+    }
+    return 0;
+}
+
+
+function fatorialR(numero) { // codigo recursivo
+
+    if (numero == 1) {
+        return 1;
+
+    } else {
+        return numero * fatorialR(numero - 1);
+    }
+
+}
+
+// function fatorialR(numero) {
+//     return numero == 1 ? 1 : numero * fatorialR(numero - 1);
+// }
 
 
 
+// let v = ['mateus', 5, 10, 'mahs', 'jhdhjhdj'];
+// let soma = somaVetor(v);
+// alert(soma);
+
+
+// alert(fatorialR(4));
 
 /* Area de testar as funções */
 
