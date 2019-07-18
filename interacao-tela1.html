@@ -6,35 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form>
 
-    <form>
+                    <!-- <p id="mensagem"></p> -->
+                    <label for="valor1">Valor 1</label>
+                    <br>
+                    <input type="text" id="valor1">
+                    <span id="mensagem1"></span>
+                    <br>
+                    <label for="valor2">Valor 2</label>
+                    <br>
+                    <input type="text" id="valor2">
+                    <span id="mensagem2"></span>
+                    <br>
+                    <br>
 
-        <!-- <p id="mensagem"></p> -->
-        <label for="valor1">Valor 1</label>
-        <br>
-        <input type="text" id="valor1">
-        <span id="mensagem1"></span>
-        <br>
-        <label for="valor2">Valor 2</label>
-        <br>
-        <input type="text" id="valor2">
-        <span id="mensagem2"></span>
-        <br>
-        <br>
+                    <button type="button" onclick="calcular();">Calcular</button>
 
-        <button type="button" onclick="calcular();">Calcular</button>
+                    <br>
+                    <br>
+                    <label for="resultado">Resultado</label>
+                    <br>
+                    <input type="text" id="resultado">
+                    <br>
 
-        <br>
-        <br>
-        <label for="resultado">Resultado</label>
-        <br>
-        <input type="text" id="resultado">
-        <br>
-        
-    </form>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/interacao-tela1.js"></script>
 

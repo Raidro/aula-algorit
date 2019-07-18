@@ -21,6 +21,8 @@ function ehNumero(numero) {
 
 function validaCampo(valor, id, mensagem) {
 
+    document.getElementById(id).innerHTML = '';
+
     if (ehNumero(valor)) {
         return parseInt(valor);
 
