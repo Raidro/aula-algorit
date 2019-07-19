@@ -14,28 +14,34 @@
         <div class="row">
             <div class="col-12">
                 <form>
+                    <!-- inicio da div form-group 1 -->
+                    <div class="form-group">
+                        <label for="valor1">Valor 1</label>
+                        <input type="text" id="valor1" class="form-control">
+                        <span id="mensagem1"></span>
+                    </div>
+                    <!-- fim da div form-group 1 -->
 
-                    <!-- <p id="mensagem"></p> -->
-                    <label for="valor1">Valor 1</label>
-                    <br>
-                    <input type="text" id="valor1">
-                    <span id="mensagem1"></span>
-                    <br>
-                    <label for="valor2">Valor 2</label>
-                    <br>
-                    <input type="text" id="valor2">
-                    <span id="mensagem2"></span>
-                    <br>
-                    <br>
+                    <!-- inicio da div form-group 2 -->
+                    <div class="form-group">
+                        <label for="valor2">Valor 2</label>
+                        <input type="text" id="valor2" class="form-control">
+                        <span id="mensagem2"></span>
+                    </div>
+                    <!-- fim da div form-group 2 -->
 
-                    <button type="button" onclick="calcular();">Calcular</button>
+                    <!-- inicio do botão -->
+                    <div class="form-group">
+                        <button type="button" onclick="calcular();" class="btn btn-primary">Calcular</button>
+                    </div>
+                    <!-- fim do botão -->
 
-                    <br>
-                    <br>
-                    <label for="resultado">Resultado</label>
-                    <br>
-                    <input type="text" id="resultado">
-                    <br>
+                    <!-- inicio do formulario resultado -->
+                    <div class="form-group">
+                        <label for="resultado">Resultado</label>
+                        <input type="text" id="resultado" class="form-control">
+                    </div>
+                    <!-- fim do formulario resultado -->
 
                 </form>
             </div>
